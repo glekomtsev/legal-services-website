@@ -1,0 +1,46 @@
+.tagline {
+  background: #010101;
+  color: #fff;
+}
+.container {
+}
+.tagline__container {
+  padding: 16px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+}
+.tagline__contacts {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.tagline__item {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.tagline__item--mail{
+  @include mobile {
+      display: none;
+  }
+}
+
+.tagline__order {
+}
+.tagline__btn {
+  font-weight: 700;
+  line-height: 150%;
+  color: #4f8ff0;
+  transition: all 0.2s ease-in;
+
+  &:hover{
+    color: #ffffff;
+  }
+}

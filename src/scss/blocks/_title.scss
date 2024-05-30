@@ -1,0 +1,17 @@
+.title {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #222;
+
+  margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 24px;
+  }
+
+  @include mobile {
+    font-size: 20px;
+  }
+}

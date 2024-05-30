@@ -1,0 +1,51 @@
+.lawyers {
+  background: #f7f7f7;
+
+  padding: 80px 0;
+
+  @include tablet {
+      padding: 60px 0;
+  }
+
+  @include mobile {
+      padding: 40px 0;
+  }
+}
+
+.lawyers__container {
+  text-align: center;
+}
+.lawyers__info {
+  margin-bottom: 48px;
+}
+.lawyers__title {
+  
+}
+.lawyers__block {
+  width: 50px;
+  height: 3px;
+  background: #4f8ff0;
+  margin: 0 auto;
+}
+.lawyers__desc {
+  margin-top: 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: #222;
+
+  @include mobile {
+      font-size: 14px;
+  }
+}
+.lawyers__items {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include tablet {
+    overflow: hidden;
+  }
+}

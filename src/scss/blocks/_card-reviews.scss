@@ -1,0 +1,49 @@
+.card-reviews {
+  padding: 32px 32px;
+
+  box-shadow: 2px 2px 10px 0 rgba(33, 33, 33, 0.15);
+  background: #fff;
+
+  display: grid;
+  gap: 16px;
+
+  min-width: 576px;
+  min-height: 263px;
+
+  @include tablet {
+      padding: 24px 24px;
+  }
+}
+.card-reviews__info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.card-reviews__text {
+  flex-grow: 1;
+
+  display: grid;
+  gap: 4px;
+}
+.card-reviews__company {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  color: #222;
+}
+.card-reviews__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #222;
+}
+
+.icon-stylus{
+  @include mobile {
+      display: none;
+  }
+}
+
+.card-reviews__desc {
+  text-wrap: wrap;
+}

@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/* Base */
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/fontsAutoGen';
+@import './base/base';
+@import './base/docs'; /* Отключить при необходимости */
+@import './base/utils'; // Тест на ошибку
+@import './base/containers';
+@import './base/sticky-footer';
+
+/* Blocks */
+@import './blocks/*.scss';
+
+/* No styles code below. Only in modules */
+/* Не пишите CSS код ниже. Только в подключаемых файлах */

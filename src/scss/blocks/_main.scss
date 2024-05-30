@@ -1,0 +1,99 @@
+.main {
+  background-color: #999;
+  background-image: url("./../../img/main/bg.jpg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include mediaBg() {
+    background-image: url("./../../img/main/bg@2x.jpg");
+  }
+  height: 820px;
+
+  @include tablet {
+    height: 529px;
+  }
+
+  @include mobile {
+    height: 486px;
+  }
+}
+
+.main__container {
+  max-width: 1090px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main__info {
+  padding-top: 150px;
+
+  color: #fff;
+
+  @include tablet {
+    padding-top: 66px;
+  }
+
+  @include mobile {
+    padding-top: 60px;
+  }
+}
+.main__subtitle {
+  line-height: 150%;
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  @include mobile {
+    font-size: 18px;
+  }
+}
+.main__title {
+  line-height: 150%;
+  font-weight: 600;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: #4f8ff0;
+  margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 50px;
+    line-height: 120%;
+  }
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 110%;
+  }
+}
+.main__desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+.main__btn {
+  margin-top: 48px;
+
+  @include tablet {
+    margin-top: 46px;
+  }
+
+  @include mobile {
+    margin-top: 32px;
+  }
+}
