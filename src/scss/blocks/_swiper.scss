@@ -1,0 +1,20 @@
+.sliderLawyers {
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 312px;
+
+    @include tablet {
+      width: 300px;
+    }
+
+    @include mobile {
+      width: 250px;
+    }
+  }
+
+  .swiper-button-prev {
+  }
+}

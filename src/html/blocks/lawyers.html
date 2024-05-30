@@ -8,14 +8,30 @@
                     сосредоточиться. Lorem Ipsum используют
                     потому, что тот обеспечивает более или менее стандартное заполнение шаблона</div>
             </div>
-            <div class="lawyers__items">
+            <!-- <div class="lawyers__items">
                 @@include('cards/card-lawyers.html')
                 @@include('cards/card-lawyers.html')
                 @@include('cards/card-lawyers.html')
                 @@include('cards/card-lawyers.html')
                 @@include('cards/card-lawyers.html')
                 @@include('cards/card-lawyers.html')
+            </div> -->
+        </div>
+        <!-- Slider main container -->
+
+        <div class="swiper sliderLawyers">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper sliderLawyers">
+                <!-- Slides -->
+                @@loop('cards/card-lawyers.html', './data/lawyers.json')
             </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination sliderLawyers"></div> -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev sliderLawyers"></div>
+            <div class="swiper-button-next sliderLawyers"></div>
         </div>
     </div>
+
 </section>
