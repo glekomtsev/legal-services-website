@@ -49,12 +49,15 @@
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 0 20px;
   text-align: center;
   background: #fff;
 
   opacity: 0;
-  padding: 53px 10px 40px;
+  padding: 53px 20px 40px;
+
+  @include tablet {
+    padding: 30px 10px 30px;
+  }
 }
 .lawyers__item-info--hover {
   margin-bottom: 20px;

@@ -6,7 +6,7 @@ import "swiper/css/bundle";
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
-  spaceBetween: 30,
+  spaceBetween: 24,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

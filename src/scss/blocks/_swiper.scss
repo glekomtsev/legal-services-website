@@ -2,13 +2,8 @@
   .swiper {
     width: 100%;
   }
-
   .swiper-slide {
-    width: 312px;
-
-    @include tablet {
-      width: 300px;
-    }
+    width: 290px;
 
     @include mobile {
       width: 250px;
