@@ -2,13 +2,39 @@
     <div class="container">
         <div class="reviews__container">
             <div class="reviews__info">
-                <p class="reviews__title title">Что о нас говорят клиенты</p>
-                <div class="reviews__block"></div>
+                <div class="reviews__info-text">
+                    <p class="reviews__title title">Что о нас говорят клиенты</p>
+                    <div class="reviews__block"></div>
+                </div>
+                <div class="reviews__swipe-nav">
+                    <button class="reviews__left-spwipe">
+                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.3333 18.3334L5 10.0001L13.3333 1.66675L14.8125 3.14591L7.95833 10.0001L14.8125 16.8542L13.3333 18.3334Z" />
+                        </svg>
+                    </button>
+
+                    <svg width="26" height="50" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.07337" y1="29.4424" x2="15.1013" y2="0.680956" stroke="#4F8FF0" stroke-width="2" />
+                    </svg>
+
+                    <svg class="reviews__right-spwipe" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.68766 18.3334L5.2085 16.8542L12.0627 10.0001L5.2085 3.14591L6.68766 1.66675L15.021 10.0001L6.68766 18.3334Z" />
+                    </svg>
+                </div>
             </div>
-            <div class="reviews__items">
-                @@include('cards/card-reviews.html')
-                @@include('cards/card-reviews.html')
-            </div>
+            <div class="reviews__swiper">
+                <div class="swiper swiper-reviews">
+                    <div class="swiper-wrapper">
+                        @@include('cards/card-reviews.html')
+                        @@include('cards/card-reviews.html')
+                        @@include('cards/card-reviews.html')
+                        @@include('cards/card-reviews.html')
+                    </div>
+                </div>
+            </div>            
             <div class="reviews__btns">
                 <a href="#!" class="btn">Все отзывы</a>
                 <a href="#!" class="btn btn--gray">Написать отзыв</a>

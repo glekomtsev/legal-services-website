@@ -7,8 +7,8 @@
   display: grid;
   gap: 16px;
 
-  min-width: 576px;
-  min-height: 263px;
+  min-width: 100%;
+  min-height: 100%;
 
   @include tablet {
       padding: 24px 24px;

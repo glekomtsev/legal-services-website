@@ -1,14 +1,16 @@
 .services__item {
   background: #fff;
 
-  color: #222;
+  a {
+    color: #222;
+  }
 
   padding: 20px 20px;
   text-align: center;
 
   transition: border-radius 0.2s ease-in-out;
   @include tablet {
-      padding: 10px 10px;
+    padding: 10px 10px;
   }
 }
 
@@ -22,7 +24,7 @@
   transition: border-radius 0.2s ease-in-out;
 
   @include tablet {
-      padding: 22px 12px;
+    padding: 22px 12px;
   }
 }
 
@@ -39,7 +41,7 @@
   margin-bottom: 10px;
 
   @include tablet {
-      line-height: 120%;
+    line-height: 120%;
   }
 }
 .services__item-desc {
@@ -48,15 +50,17 @@
   line-height: 120%;
 
   @include tablet {
-      font-weight: 300;
+    font-weight: 300;
   }
 }
 
 .services__item:hover {
-  color: #fff;
+  a {
+    color: #fff;
+  }
   background: #4f8ff0;
 
-//   border-radius: 50px;
+  //   border-radius: 50px;
 
   .seriveces__decor {
     border: 1px double #ffffff;
@@ -67,4 +71,3 @@
     fill: #fff;
   }
 }
-

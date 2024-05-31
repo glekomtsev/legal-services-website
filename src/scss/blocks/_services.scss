@@ -12,7 +12,8 @@
 }
 
 .services__container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 48px;
 
   @include tablet {
@@ -75,7 +76,14 @@
   }
 
   @include mobile {
-    overflow: hidden;
+    display: none;
+  }
+}
+
+.servives__slider{
+  display: none;
+  @include mobile {
+      display: block;
   }
 }
 

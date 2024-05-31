@@ -1,4 +1,14 @@
-.sliderLawyers {
+.swiper-services {
+  .swiper {
+    width: 100%;
+  }
+  .swiper-slide {
+    width: 250px;
+    height: 285px;
+  }
+}
+
+.swiper-lawyer {
   .swiper {
     width: 100%;
   }
@@ -7,6 +17,19 @@
 
     @include mobile {
       width: 250px;
+    }
+  }
+}
+
+.swiper-reviews {
+  .swiper {
+    width: 100%;
+  }
+  .swiper-slide {
+    width: 648px;
+
+    @include mobile {
+      width: 300px;
     }
   }
 }
