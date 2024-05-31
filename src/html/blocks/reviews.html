@@ -28,10 +28,7 @@
             <div class="reviews__swiper">
                 <div class="swiper swiper-reviews">
                     <div class="swiper-wrapper">
-                        @@include('cards/card-reviews.html')
-                        @@include('cards/card-reviews.html')
-                        @@include('cards/card-reviews.html')
-                        @@include('cards/card-reviews.html')
+                        @@loop('cards/card-reviews.html', './data/reviews.json')
                     </div>
                 </div>
             </div>            

@@ -9,22 +9,12 @@
                     заполнение шаблона</div>
             </div>
             <div class="services__items">
-                @@include('cards/card-services.html')
-                @@include('cards/card-services.html')
-                @@include('cards/card-services.html')
-                @@include('cards/card-services.html')
-                @@include('cards/card-services.html')
-                @@include('cards/card-services.html')
+                @@loop('cards/card-services.html', './data/services.json')
             </div>
             <div class="servives__slider">
                 <div class="swiper swiper-services">
                     <div class="swiper-wrapper">
-                        @@include('cards/card-services.html')
-                        @@include('cards/card-services.html')
-                        @@include('cards/card-services.html')
-                        @@include('cards/card-services.html')
-                        @@include('cards/card-services.html')
-                        @@include('cards/card-services.html')
+                        @@loop('cards/card-services.html', './data/services.json')
                     </div>
                 </div>
             </div>
