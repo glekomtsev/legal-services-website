@@ -25,16 +25,20 @@
   text-align: center;
 }
 .main__info {
-  padding-top: 150px;
+  margin-top: 150px;
 
   color: #fff;
 
+  background: radial-gradient(50% 50% at 50% 50%, rgba(33, 28, 28, 1) 0%, rgba(33, 28, 28, 0) 100%);
+
+
+
   @include tablet {
-    padding-top: 66px;
+    margin-top: 66px;
   }
 
   @include mobile {
-    padding-top: 60px;
+    margin-top: 60px;
   }
 }
 .main__subtitle {
