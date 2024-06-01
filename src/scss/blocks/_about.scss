@@ -31,7 +31,7 @@
 
   span {
     font-weight: 900;
-    color: #4f8ff0;
+    color: var(--accent);
   }
 
   margin-bottom: 10px;
@@ -47,7 +47,7 @@
 .about__block {
   width: 50px;
   height: 3px;
-  background: #4f8ff0;
+  background: var(--accent);
 }
 .about__desc {
   text-wrap: wrap;

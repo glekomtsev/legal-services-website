@@ -37,7 +37,7 @@
 .tagline__btn {
   font-weight: 700;
   line-height: 150%;
-  color: #4f8ff0;
+  color:  var(--accent);
   transition: all 0.2s ease-in;
 
   &:hover{

@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  background-color: #4f8ff0;
+  background-color: var(--accent);
   padding: 16px 24px;
 
   font-weight: 900;
@@ -12,9 +12,9 @@
 
   &:hover {
     padding: 14px 22px;
-    color: #4f8ff0;
+    color:  var(--accent);
     background: #fff;
-    border: 2px solid #4f8ff0;
+    border: 2px solid var(--accent);
   }
 }
 

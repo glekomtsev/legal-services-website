@@ -43,7 +43,7 @@
 .reviews__block {
   width: 50px;
   height: 3px;
-  background: #4f8ff0;
+  background: var(--accent);
 }
 
 .reviews__swiper{
@@ -63,12 +63,12 @@
   svg {
     width: 40px;
     height: 40px;
-    fill: #4f8ff0;
+    fill: var(--accent);
     padding: 10px 10px;
     border-radius: 50%;
 
     &:hover {
-      background-color: #4f8ff0;
+      background-color:  var(--accent);
       fill: #fff;
     }
   }

@@ -63,7 +63,7 @@
   font-weight: 600;
   font-size: 56px;
   text-transform: uppercase;
-  color: #4f8ff0;
+  color: var(--accent);
   margin-bottom: 8px;
 
   @include tablet {

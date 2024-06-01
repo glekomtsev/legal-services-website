@@ -42,7 +42,7 @@
   a:hover {
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: #4f8ff0;
+    color: var(--accent);
   }
 
   & .active {

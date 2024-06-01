@@ -20,7 +20,7 @@
 .seriveces__decor {
   height: 100%;
   width: 100%;
-  border: 3px double #4f8ff0;
+  border: 3px double var(--accent);
 
   padding: 15px 12px 22px;
 
@@ -37,7 +37,7 @@
   background-color: #fff;
 
   margin: 0 auto;
-  fill: #4f8ff0;
+  fill: var(--accent);
   margin-bottom: 5px;
 
   @include mobile {
@@ -69,7 +69,7 @@
   a {
     color: #fff;
   }
-  background: #4f8ff0;
+  background: var(--accent);
 
   //   border-radius: 50px;
 
