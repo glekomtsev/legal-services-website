@@ -27,3 +27,12 @@ const swiperReviews = new Swiper(".swiper-reviews", {
 // Мобильная навигация
 import mobileNav from "./modules/mobile-nav.js";
 mobileNav();
+
+//accordeon
+const serviceTitles = document.querySelectorAll("[data-name='service-title']");
+
+serviceTitles.forEach(function(item) {
+  item.addEventListener("click", function() {
+    this.nextElementSibling.classList.toggle("none");
+  });
+});
