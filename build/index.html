@@ -12,6 +12,35 @@
 	</head>
 
 	<body>
+		<section data-modal-register-html class="modal-registration none">
+			<div class="registration">
+				<div class="card-registration">
+					<div class="card-registration__card">
+						<div class="card-registration__info">Оставьте свои контакты и&#160;мы&#160;с&#160;вами свяжемся!</div>
+						<div class="card-registration__name">
+							<p>Ваше имя</p>
+							<input class="card-registration__input" type="text" />
+						</div>
+						<div class="card-registration__name">
+							<p>Ваш номер</p>
+							<input
+								class="card-registration__input"
+								type="phone"
+								id="phone"
+								name="phone"
+								placeholder="+7 (XXX) XXX-XX-XX"
+								required
+								pattern="\+7 \d{3} \d{3}-\d{2}-\d{2}"
+							/>
+						</div>
+						<div class="card-registration__btn">
+							<button class="btn">Записаться</button>
+							<button data-modal-close-register-btn class="btn btn--gray">Отмена</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="tagline">
 			<div class="container">
 				<div class="tagline__container">
@@ -62,7 +91,7 @@
 						</p>
 					</div>
 					<div class="main__btn">
-						<a class="btn" href="#!">Записаться на&#160;бесплатную консультацию</a>
+						<a data-modal-register-btn class="btn" href="#!">Записаться на&#160;бесплатную консультацию</a>
 					</div>
 				</div>
 			</div>
@@ -635,7 +664,7 @@
 							</div>
 						</div>
 						<div class="footer__nav">
-							<a href="#!" class="footer__nav-item">Услуги</a>
+							<a href="./../service.html" class="footer__nav-item">Услуги</a>
 							<a href="#!" class="footer__nav-item">О&#160;компании</a>
 							<a href="#!" class="footer__nav-item">Сертификаты</a>
 							<a href="#!" class="footer__nav-item">Отзывы</a>
@@ -654,10 +683,7 @@
 									<span>Ведущий юрист</span>
 								</div>
 							</div>
-							<div class="footer__person-quote">
-								Есть над чем задуматься: тщательные исследования конкурентов разоблачены. Идейные соображения высшего порядка, а&#160;также перспективное планирование
-								играет
-							</div>
+							<div class="footer__person-quote">Денежный долг дороже денег!</div>
 							<button class="btn">
 								Задать вопрос юристу
 							</button>

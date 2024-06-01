@@ -36,3 +36,64 @@ serviceTitles.forEach(function(item) {
     this.nextElementSibling.classList.toggle("none");
   });
 });
+
+//modal registration
+const modalRegistrationBtn = document.querySelector(
+  "[data-modal-register-btn]"
+);
+modalRegistrationBtn.addEventListener("click", function() {
+  const modalRegisterHtml = document.querySelector(
+    "[data-modal-register-html]"
+  );
+
+  modalRegisterHtml.classList.remove("none");
+});
+
+const modalCloseRegistrationBtn = document.querySelector(
+  "[data-modal-close-register-btn]"
+);
+
+modalCloseRegistrationBtn.addEventListener("click", function() {
+  const modalRegisterHtml = document.querySelector(
+    "[data-modal-register-html]"
+  );
+
+  modalRegisterHtml.classList.add("none");
+});
+
+//input phone
+document.addEventListener("DOMContentLoaded", () => {
+  const phoneInput = document.getElementById("phone");
+
+  phoneInput.addEventListener("input", () => {
+    let value = phoneInput.value.replace(/\D/g, "");
+    let formattedValue = "+7 ";
+
+    if (value.length > 1) {
+      formattedValue += value.substring(1, 4);
+    }
+    if (value.length >= 4) {
+      formattedValue += " " + value.substring(4, 7);
+    }
+    if (value.length >= 7) {
+      formattedValue += " " + value.substring(7, 9);
+    }
+    if (value.length >= 9) {
+      formattedValue += " " + value.substring(9, 11);
+    }
+
+    phoneInput.value = formattedValue.substring(0, 16);
+  });
+
+  phoneInput.addEventListener("blur", () => {
+    const pattern = new RegExp(phoneInput.getAttribute("pattern"));
+    const errorMessage = document.getElementById("phone-error");
+    if (!pattern.test(phoneInput.value)) {
+      phoneInput.classList.add("invalid");
+      errorMessage.style.display = "block";
+    } else {
+      phoneInput.classList.remove("invalid");
+      errorMessage.style.display = "none";
+    }
+  });
+});
