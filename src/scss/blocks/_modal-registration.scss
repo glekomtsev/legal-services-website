@@ -21,6 +21,16 @@
 
   padding: 20px 50px;
   border-radius: 10px;
+
+  @include tablet {
+    padding: 15px 30px;
+    width: 530px;
+  }
+
+  @include mobile {
+    padding: 10px 10px;
+    max-width: 300px;
+  }
 }
 .card-registration__info {
   font-weight: 800;
@@ -29,7 +39,15 @@
   text-transform: uppercase;
   color: #222;
 
-  padding: 10px 5px;
+  // padding: 10px 0px;
+  text-align: center;
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include mobile {
+  }
 }
 .card-registration__name {
   display: flex;
@@ -44,9 +62,16 @@
   color: #000000;
 
   padding: 20px 0;
-
   p {
     width: 150px;
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include mobile {
+    flex-direction: column;
   }
 }
 
@@ -60,6 +85,9 @@
   &:focus {
     background-color: #fff;
   }
+
+  @include mobile {
+  }
 }
 .card-registration__phone {
 }
@@ -69,6 +97,8 @@
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
-}
-.btn {
+
+  @include mobile {
+    flex-direction: column;
+  }
 }

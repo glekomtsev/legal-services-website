@@ -67,10 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   phoneInput.addEventListener("input", () => {
     let value = phoneInput.value.replace(/\D/g, "");
-    let formattedValue = "+7 ";
+    let formattedValue = "+7";
 
     if (value.length > 1) {
-      formattedValue += value.substring(1, 4);
+      formattedValue += " " + value.substring(1, 4);
     }
     if (value.length >= 4) {
       formattedValue += " " + value.substring(4, 7);
@@ -82,7 +82,17 @@ document.addEventListener("DOMContentLoaded", () => {
       formattedValue += " " + value.substring(9, 11);
     }
 
-    phoneInput.value = formattedValue.substring(0, 16);
+    phoneInput.value = formattedValue.trim();
+  });
+
+  phoneInput.addEventListener("keydown", (event) => {
+    if (event.key === "Backspace") {
+      let value = phoneInput.value;
+      if (value.endsWith(" ")) {
+        phoneInput.value = value.slice(0, -1);
+        event.preventDefault();
+      }
+    }
   });
 
   phoneInput.addEventListener("blur", () => {

@@ -74,8 +74,8 @@
   //   border-radius: 50px;
 
   .seriveces__decor {
-    border: 1px double #ffffff;
-    border-radius: 35px;
+    border: 3px double #ffffff;
+    // border-radius: 35px;
 
     @include mobile {
       border: 3px double #fff;
