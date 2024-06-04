@@ -2,9 +2,10 @@
 
 ### Многостраничный сайт с основной необходимой информацией для юридической компании.
 
-*HTML
-*SCSS
-*Gulp
-*JS
+- HTML
+- SCSS
+- Gulp
+- JS
 
 [Перейти на сайт](https://glekomtsev.github.io/legal-services-website/)
+п
