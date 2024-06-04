@@ -8,4 +8,3 @@
 - JS
 
 [Перейти на сайт](https://glekomtsev.github.io/legal-services-website/)
-п
