@@ -1,5 +1,7 @@
 ## Сайт "Правозащитник - Юридическая компания"
 
+[Перейти на сайт](https://glekomtsev.github.io/legal-services-website/)
+
 ### Многостраничный сайт с основной необходимой информацией для юридической компании.
 
 - HTML
@@ -7,4 +9,4 @@
 - Gulp
 - JS
 
-[Перейти на сайт](https://glekomtsev.github.io/legal-services-website/)
+
